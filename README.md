@@ -13,120 +13,59 @@ Author- Ritu Mandiya
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
-            background-color: #2b2b2b;
-            color: #fff;
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #2d2d2d; /* Updated background color */
+            color: #fff; /* Updated text color */
         }
 
-        h1 {
-            color: hsl(0, 14%, 95%);
+        h1, h2 {
+            color: #fff; /* Updated heading color */
         }
 
-
-
-        header {
-            background-color: #1c1c1c;
-            padding: 1em;
-            text-align: center;
+        p {
+            line-height: 1.6;
         }
 
-        header h1 {
-            margin: 0;
-            color: #ffcc00;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        nav {
-            background-color: #1c1c1c;
-            padding: 0.5em;
-            text-align: center;
+        .highlight {
+            color: #42921e;
+            font-weight: bold;
         }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-        }
-
-        .vision-mission {
-            background-color: #1c1c1c;
-            color: #fff;
-            padding: 2em;
-            margin-top: 20px;
-            border-top: 2px solid #5a5a5a;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .vision-mission h2 {
-            color: #ffcc00;
-        }
-
-        footer {
-            background-color: #1c1c1c;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        section img {
+        .vision-image {
             width: 100%;
             height: auto;
-            display: block;
-            margin: auto;
+            border-radius: 8px;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Unsaid Bravery Tales</h1>
-    </header>
+<div class="container">
+    <h1><span class="highlight">Unsaid Bravery Tales</span></h1>
 
-    <nav>
-        
+    <p>Welcome to Unsaid Bravery Tales! <b> We are dedicated to providing an empowering digital arena where veterans can share their own journeys. We set out on this journey firmly believing that every voice, every hardship, and every victory have a right to be heard and valued. Our goal is to create a smooth and encouraging atmosphere where veterans of the armed forces can find comfort in the knowledge of others who have gone through similar things. By means of our platform, we aim to establish a connection between unsung bravery and communal gratitude, assembling the various accounts of military service into a vibrant and motivational tapestry.</p>
+           
+    <h2><span class="highlight">What We Offer</span></h2>
 
-        <a href="#" class="button-container" onclick="window.location.href='abtus.html'">About Us</a> 
+    <p>A website devoted to revealing and honoring the brave stories that are often overlooked. Our goal is to raise awareness of the many daring deeds that take place in the quieter moments of our life, highlighting the tenacity, fortitude and resolve that are frequently unsaid.<br><br>Do you have a story of unspoken bravery to share? We invite entries from national storytellers. Someone might find the motivation to overcome their obstacles in your narrative. Speak up and add to our expanding library of courageous anecdotes.</p>
 
+    <img src="/abt.jpg" alt="Vision Image" class="vision-image">
 
-        <a href="#" class="button-container" onclick="window.location.href='abtus.html'">Stories</a> 
+    <h2>Contact Us</h2>
 
-     
-            <a href="#" class="button-container" onclick="window.location.href='register.html'">Register</a> 
+    <p>Have questions or feedback? We'd love to hear from you!</p>
 
-    </nav>
-
-    
-    <section>
-        <h2>Welcome to Unsaid Bravery Tales</h2>
-        <p>This platform is a tribute to the brave military veterans who have stories of courage and sacrifice. <br>Unsaid Bravery Tales is a movement that honors the incredible bravery present in everyday life more than just a website. Let's work together to unearth, disseminate and magnify the unsung courage stories that add to the inspiration of our world. </p>
-       
-        <img src="/parade-7406030_1280.jpg" alt="Description of the image" height="fixed">
-    </section>
-    
-   
-    <footer>
-        <p>&copy; 2023 Unsaid Bravery Tales. All rights reserved.</p>
-    </footer>
-
+    <p>Email: <span class="highlight">info@example.com</span></p>
+    <p>Phone: <span class="highlight">+1 (123) 456-7890</span></p>
+</div>
 
 </body>
 </html>
