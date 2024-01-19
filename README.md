@@ -8,7 +8,7 @@ Author- Ritu Mandiya
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsaid Bravery Tales</title>
+    <title>Registration</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,108 +25,71 @@ Author- Ritu Mandiya
             color: hsl(0, 14%, 95%);
         }
 
-
-
-        header {
+        form {
+            max-width: 300px;
+            margin: 0 auto;
             background-color: #1c1c1c;
-            padding: 1em;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #ffcc00;
-        }
-
-        nav {
-            background-color: #1c1c1c;
-            padding: 0.5em;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-        }
-
-        .vision-mission {
-            background-color: #1c1c1c;
-            color: #fff;
-            padding: 2em;
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 20px;
-            border-top: 2px solid #5a5a5a;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
         }
 
-        .vision-mission h2 {
-            color: #ffcc00;
-        }
-
-        footer {
-            background-color: #1c1c1c;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        section img {
-            width: 100%;
-            height: auto;
+        label {
             display: block;
-            margin: auto;
-            margin-top: 20px;
+            margin-bottom: 8px;
+            color: hsl(0, 10%, 92%);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Unsaid Bravery Tales</h1>
-    </header>
+<form action="one.php" method="post">
+    <h1>Registration Form</h1>
 
-    <nav>
-        
+    <label for="username">Name:</label>
+    <input type="text" id="username" required>
 
-        <a href="#" class="button-container" onclick="window.location.href='abtus.html'">About Us</a> 
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
 
+    <label for="mobileNumber">Phone Number:</label>
+    <input type="tel" id="mobileNumber" required>
 
-        <a href="#" class="button-container" onclick="window.location.href='abtus.html'">Stories</a> 
+    <label for="militaryBranch">Military Branch:</label>
+    <select id="militaryBranch" required>
+        <option value="Indian Army">Indian Army</option>
+        <option value="Indian Navy">Indian Navy</option>
+        <option value="Indian Air Force">Indian Air Force</option>
+        <option value="Paramilitary and special forces">Paramilitary and special forces</option>
+    </select>
 
-     
-            <a href="#" class="button-container" onclick="window.location.href='register.html'">Register</a> 
+    <label for="yearsofservice">Years of Service:</label>
+    <input type="number" id="yearsofservice" required>
 
-    </nav>
+    <label for="militaryId">Military ID:</label>
+    <input type="file" id="militaryId" accept="image/*" required>
 
-    
-    <section>
-        <h2>Welcome to Unsaid Bravery Tales</h2>
-        <p>This platform is a tribute to the brave military veterans who have stories of courage and sacrifice. <br>Unsaid Bravery Tales is a movement that honors the incredible bravery present in everyday life more than just a website. Let's work together to unearth, disseminate and magnify the unsung courage stories that add to the inspiration of our world. </p>
-       
-        <img src="/parade-7406030_1280.jpg" alt="Description of the image" height="fixed">
-    </section>
-    
-   
-    <footer>
-        <p>&copy; 2023 Unsaid Bravery Tales. All rights reserved.</p>
-    </footer>
+    <label for="aadharId">Aadhar Card ID:</label>
+    <input type="file" id="aadharId" accept="image/*" required>
 
+    <button type="button" onclick="registerUser()">Register</button>
+</form>
 
 </body>
 </html>
